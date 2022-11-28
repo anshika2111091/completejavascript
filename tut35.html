@@ -1,0 +1,26 @@
+<!-- revere a string in Javascript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Reverse the String in Real Time with Decrementing For Loop</h2>
+    <input type="text" id="word" onkeyup="reverse()">
+    <input type="text" id="reverse">
+</body>
+<script>
+    function reverse(){
+        var s=document.getElementById("word").value;
+        var newstring="";
+        for(var i=s.length-1;i>=0;i--){
+            newstring+=s[i];
+        }
+        document.getElementById("reverse").value=newstring;
+    
+    }
+
+</script>
+</html>

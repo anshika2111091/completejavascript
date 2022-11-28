@@ -1,0 +1,23 @@
+<script>
+    var array=["ansika","puri","anshika"];
+    var length=array.length;
+    alert(length);
+    document.write(length);
+    array.sort();
+    document.write(array);
+    array.push("thapatechnical");
+    document.write(array);
+    array.pop();//removes from end
+    document.write(array);
+    array.shift();//removes an element from beginning of the array
+    document.write(array);
+    array.unshift("thapatechnical");//use to add a new element to the array also get the back the shifted element
+    array.reverse();
+    document.write(array);
+    var check=Array.isArray(array);//remember Array is a by default keyword Array.isArray() method to check whether an array or not.
+    document.write(check);
+    var check=["ansika","puri","anshika"];
+    document.write(array.concat(check));
+    document.write(array.indexOf("puri"));
+
+</script>

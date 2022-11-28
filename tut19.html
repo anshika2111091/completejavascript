@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="anshi">Anshika </p>
+    <p class="welcome">Puri</p>
+    <br>
+    <br>
+
+    <!-- how to access element by id and class -->
+    <script>
+        var a=document.getElementById("anshi").innerHTML;
+        document.write(a);
+
+    //    how to access element by class
+
+    </script>
+    <script>
+        var b=document.getElementsByClassName("welcome")[0].innerHTML;//we have to pass index no. in case of class elements 
+        document.write(b);
+    </script>
+    <!-- how to access elements by tag name -->
+    <script>
+        var tag=document.getElementsByTagName("p");
+        document.write(tag);
+        console.log(tag);
+    </script>
+
+    <!-- how to access first elements -->
+<script>
+    var p=document.querySelector("p");
+    document.write(p);
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="thapa">Thapa</p>
+    <p class="welcome">Technical</p>
+    <p class="welcome">Technical1</p>
+    <p class="welcome">Technical2</p>
+    <ul><li>like</li>
+        <li>share</li>
+        <li>subscribe</li></ul>
+<!-- to access children of a body -->
+<script>
+    var child=document.body.children;
+    console.log(child);
+    //add a new child in the body
+    var para=document.createElement("p");
+    var textNode=document.createTextNode("This is a new para");
+    para.appendChild(textNode);
+console.log(para);
+document.body.appendChild(para);
+
+//access firstchild and lastchild
+var list=document.querySelector("ul");
+console.log(list);
+console.log(list.firstChild);
+console.log(list.lastChild);
+
+//access siblings
+
+
+var firstsib=thapa.nextElementSibling.nextElementSibling;//accessing by id or class name
+console.log(firstsib);
+
+console.log(list.parentNode);
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

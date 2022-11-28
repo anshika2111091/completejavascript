@@ -1,0 +1,38 @@
+<!-- scope chain in Javascript -->
+<!-- The scope chain is simply the locations whrer identifiers are declared that is searched to resolve the value of an 
+identifiers.
+Execution Context refers to scope.
+Lexical Scope means that in a nested group of funtions, the inner functions have access to the variables and other resources
+of their parent scope. -->
+
+<script>
+    var x=0;
+    var y1="welcome to my channel";
+    console.log(x);
+    f1();
+    function f1(){
+        debugger;
+var localvarf1="subscribe to my channel";
+var y2="check this out y2 inside f1()";
+console.log(x);
+f2();
+function f2(){
+    debugger;
+    var localvarf2= "like";
+var y3="check this out y3 inside f1()";
+console.log(x);
+f3();
+function f3(){
+    debugger;
+    var localvarf3="share";
+    var y4="check this out y4 inside f2";
+    console.log(x);
+    //climb up the scope chain
+    console.log(y4);
+    console.log(y3);
+    console.log(y2);
+    console.log(y1);
+}
+}
+    }
+</script>

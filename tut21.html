@@ -1,0 +1,23 @@
+<!-- css in javascript -->
+<!-- one by one
+document.getElementById(id).style.property=new style 
+
+all at once
+The setAttribute() method add a new attribute. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <h1 id="changecss">Please like share and subscribe</h1>
+    <script>
+        document.getElementById('changecss').style.color="red";
+        document.getElementById('changecss').setAttribute("style",
+        "color:red;background-color:black;text-align:center");
+    </script>
+</body>
+</html>

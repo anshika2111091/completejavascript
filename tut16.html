@@ -1,0 +1,28 @@
+<!-- A javascript string is zero or more characters written inside quotes. 
+
+STring can be objects
+
+Normally, javascript strings are primitive values, created from literals:
+
+var firstName="John";
+
+But strings can also be defined as objects with the keyword new:
+
+var firstName=new String("John");
+
+//typeof x will return string 
+//typeof y will return objects
+
+when using the == operator ,equal strings are equal.
+when usig the ===operator, equal strings are not equal, becasue the ===operator expects equality in both type and value. -->
+<script>
+var anshika="developer";
+var a=new String("developer");
+document.write(anshika==a);//return true
+document.write(anshika===a);//return false
+document.write(typeof(a));
+document.write(typeof(anshika));
+
+
+
+</script>

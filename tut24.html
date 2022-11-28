@@ -1,0 +1,64 @@
+<!-- events in javascript
+javascript's interaction with html is handled through events that occur when the user or the browser manipulates a
+page.
+
+Events are a part of the Document Object model(DOM) level 3 and every html element contains a set of events which
+can trigger javascript code  
+When the page load, it is called an event.When the user clicks a button,that clicks too is an event. Other examples
+include events like pressing any key, closing a window, resizing a widow, etc.
+
+onclick 
+onmouseover and onmouseout 
+onekeydown script script runs when key is pressed 
+onkeypress script Script runs when key is presses and released
+onkeyup script Script runs when key is released 
+onhover-->
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>welcome to this tutorial keep smiling and keep loving your family</h1> 
+   <!-- <button onmousedown="myfun()">Click Me</button> 
+  
+   <button onmouseenter="mytwitter()">Click Me</button>
+   <button onmouseup="mywhatsapp()">Click Me</button>
+   <button onmouseout="myyoutube()">Click Me</button> -->
+
+
+
+   <button onkeydown="myfun()">Click Me</button> 
+  
+   <button onkeypress="mytwitter()">Click Me</button>
+   <button onkeyup="mywhatsapp()">Click Me</button>
+   <button onmouseout="myyoutube()">Click Me</button>
+
+   <script>
+    function myfun(){
+        document.body.style.backgroundColor='#3b5999';
+        document.body.style.color='white';
+    }
+    function mytwitter(){
+        document.body.style.backgroundColor='#00aced';
+        document.body.style.color='white';
+    }
+    function mywhatsapp(){
+        document.body.style.backgroundColor='#25D366';
+        document.body.style.color='white';
+    }
+    function myyoutube(){
+        document.body.style.backgroundColor='#cd201F';
+        document.body.style.color='white';
+    }
+   </script>
+</body>
+</html>
