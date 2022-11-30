@@ -1,0 +1,19 @@
+<script>
+    var i;
+    var f=0;
+    var arr=["Anshika","Khusboo","Bhoomika","Aaniruddh","Gehna","Anubha","Astha"];
+    var l=arr.length;
+    var name=prompt("What is your name?");
+    document.write(name);
+    //var checkname=arr.includes(name);
+    //alert(checkname);
+    for(i=0;i<l;i++){
+        if(name==arr[i])
+        f=1;
+        
+    }
+    if(f==1)
+    alert("Welcome to my site");
+    else 
+    alert("you are not allowed");
+</script>

@@ -1,0 +1,23 @@
+<!-- Write a short program that prints each number from 1 to 100.
+For each multiple of 3, print "Frizz" instead of number.
+For each multiple of 5,print "Buzz " instead of the number.
+For numbers which are multiples of both 3 and 5 pringt "Fizzbuzz" instead of the number. -->
+<script>
+    function fizzbuzz(){ var a=1;
+    var fizzbuzz=[];
+    while(a<=100){
+        if(a%3==0&&a%5==0)
+      fizzbuzz.push("FizzBuzz");
+        else if (a%3==0)
+        fizzbuzz.push("Fizz"); 
+        else if (a%5==0)
+        fizzbuzz.push("Buzz");
+        else 
+        fizzbuzz.push(a);
+        a++;
+    }
+    console.log(fizzbuzz);
+}
+fizzbuzz();
+   
+</script>
