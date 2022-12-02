@@ -1,0 +1,22 @@
+<!-- Exercise on hoisting -->
+
+<!-- <script>
+    var a=10;
+    console.log(a);
+    var a=20;
+
+    //console.log(b);
+    //let b=30;         //hoisting is not applicable to let and const keywords
+</script> -->
+<script>
+    console.log("I am a "+job);
+    var job="Web developer";
+    console.log("I am a "+ job);
+
+    function whoAmI(){
+        console.log("I am a "+job);
+        var job="full Stack developer";
+        console.log("I am a "+job);
+    }
+    whoAmI();
+</script>
