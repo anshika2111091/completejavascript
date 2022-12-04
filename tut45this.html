@@ -1,0 +1,30 @@
+<!-- this keywored= the javascript this keyword refers to the object it belongs to.
+It has different values depending on where it is used.
+alone,this refers to the global object. 
+ In a regular function, this refers to the global objects.
+In a method, this refers to the owner object.  -->
+<!-- In a function in strict mode, this is undefined -->
+
+
+ex= -->
+
+<script>
+    // console.log(this);//refers to the window object
+    // function sum(){
+    //     var add=2+2;
+    //     console.log("sum of two no. is"+add);
+    //     console.log(this);
+    //}
+    const thapa={
+        name:"vinod thapa",
+        qualif:"Mcs",
+        sum: function(){
+            var add=2+2;
+            console.log("sum of two number is "+add);
+            console.log(this.name);
+            console.log(this);//points to the object within which it is written
+
+        }
+    }
+    thapa.sum();
+</script>

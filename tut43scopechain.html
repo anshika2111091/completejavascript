@@ -4,3 +4,21 @@
 <!-- At the top of the scope chain is the global scope,which is the window object in the browser. -->
 
 <!-- Lexical scoping:a function that is lexiclly within another funciton get access to the scope of the outer function.(Inner function can get access to their parent functions variables But the vice-versa is not true). -->
+<script>
+    var a="Hello guys";
+    function first(){
+        var b="how are you";
+        second();
+        function second(){
+            var c="mysefl vinod thapa";
+            console.log(a+b+c);
+            three();
+        }
+
+    }
+    function three(){
+        var d="pl share and subscribe my channel";
+        console.log(a+b+c+d);//gives the error b  is not defined also c will not be defined
+    }
+    first();
+</script>
