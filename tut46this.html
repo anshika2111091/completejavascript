@@ -1,0 +1,19 @@
+<script>
+    const thapa={
+        name:"vinod thapa",
+        qualif:"Mcs",
+        sum: function(){
+            var add=2+2;
+            console.log("sum of two number is "+add);
+            console.log(this.name);
+            console.log(this);//points to the object within which it is written
+             
+            function child(){//this is regular function so it points to the global object
+                var name="thapa";
+                console.log("child method name: "+name);
+                console.log(this);
+            } 
+        child();       }
+    }
+    thapa.sum();
+</script>
