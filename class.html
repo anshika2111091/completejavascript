@@ -1,0 +1,37 @@
+<script>
+    
+    class student{
+        constructor(name,age,clas){
+            this.myname=name;
+            this.myage=age;
+            this.myclass=clas;
+
+
+        }
+        biodata(){//if we declare funtion with static type then it cannot be inherited
+            return("Hi I am ${this.myname}.I am ${this.myage} years old and I am in a ${this.mycalss} student");
+
+        }
+
+    }
+
+class Players extends student{
+    
+    constructor(name,age,clas,game){
+        super(name,age,clas);
+        this.mygame=game;
+    }
+   play_biodata(){
+    return('${super.biodata()}.I am player of ${this.mygame}');
+        }
+
+    }
+
+
+
+
+    let obj1=new student("Anshika",20,"graduate","football");//if we replace student with players it will work the same
+    console.log(obj1.play_biodata());
+    // let obj2=new student("Anshikaj",20,"graduate");
+    // obj2.biodata();
+</script>
