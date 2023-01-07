@@ -28,7 +28,7 @@
         }
         h1{
             text-transform:capitalize;
-            text-align: center;
+            
             margin-bottom: 30px;
             color:#ecf0f1;
             text-shadow: 1px 2px 3px #2980b9;
@@ -36,6 +36,7 @@
         }
         h2{
             text-align: center;
+            
         }
         textarea{
             background-color: #444;
@@ -59,23 +60,26 @@
     <div class="mainDiv">
         <div class="centerDiv">
             <h1>Welcome To Typing Speed Test</h1>
-            <h2 id="msg"></h2>
+            <h2 id="msg"> </h2>
             <br>
             <textarea name="" id="mywords" cols="100" rows="10" placeholder="Remember,be nice!"></textarea>
+            <br>
             <br>
             <button id="btn" class="mainbtn">Start</button>
         </div>
     </div>
 
     <script>
-       
+       console.log("hii");
        const setofWords=["The passage experienced a surge in popularity during the 1960s when","Letraset used it on their dry-transfer sheets, and again","during the 90s as desktop publishers bundled the text with their software.","Today it's seen all around the web; on templates, websites,","and stock designs. Use our generator to get","your own, or read on for the authoritative history of lorem ipsum."];
+       console.log(setofWords);
 const msg=document.getElementById('msg');
-const mywords=document.getElementById('mywords');
+const typeWords=document.getElementById('mywords');
 const btn=document.getElementById('btn');
 let startTime,endTime;
- const playgame=()=>{
-let randomNumber= Math.floor(Math.random()*setofWords.length) ;
+
+ const playGame=()=>{
+let randomNumber= Math.floor(Math.random()*setofWords.length);
 msg.innerText=setofWords[randomNumber];
 let date=new Date();
 startTime=date.getTime();
@@ -90,7 +94,7 @@ const endPlay=()=>{
     let totalStr=typeWords.value;
     let wordcount=wordCounter(totalStr);
 
-    let speed=Math.floor((wordCount/totalTime)*60);
+    let speed=Math.floor((wordcount/totalTime)*60);
     let finalMsg="You typed total at "+speed+" words per minutes";
     finalMsg+= compareWords(msg.innerText,totalStr);
     msg.innerText=finalMsg;
@@ -121,11 +125,15 @@ const wordCounter=(str)=>{
 
 //console.log(this);
 btn.addEventListener('click',function(){
-    if(this.innertext=='Start'){
+    console.log(this);
+    
+    if(this.innerText=='Start'){
+        console.log(this);
         typeWords.disabled=false;
         playGame();
     }
-    else if(this .innerText=="Done"){
+    else if(this.innerText=="Done"){
+       
         typeWords.disabled=true;
         btn.innerText="Start";
         endPlay();
