@@ -1,0 +1,36 @@
+<script>
+    const func2=()=>{
+        setTimeout(()=>{//asynchronous function
+            console.log('func2 is starting');
+        },3000)
+       
+    }
+        const func1=()=>{
+            console.log("func1 is starting");
+            func2();
+            console.log('func2 is ending');
+        }
+        func1();
+    </script>
+    <!-- for synchronous function
+    const wait=()=>{
+        console.log('js part is starting');
+
+        let start=new Date().getTime();
+        console.log(new Date().getTime()-start);
+
+        while(new Date().getTime()-start<5000);
+        console.log('all right its done');
+    }
+    btn.addEventListener('click',wait); -->
+
+    <!-- for asynchronous
+    const wait=()=>{
+        console.log('js is starting');
+
+        setTimeout(()=>{
+            console.log('all right its done');
+        },5000);
+    }
+btn.addEventListener('click',wait); -->
+    
